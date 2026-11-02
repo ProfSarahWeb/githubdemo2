@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FlexboxColorCSStransitions-Activity</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/c079261243.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+          <a href="index.html" class="logo">LOGO</a>
+
+          <button
+            class="menu-toggle"
+            onclick="toggleMenu()"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <!-- Hamburger icon -->
+            <svg
+              class="icon icon-menu"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              width="24px"
+              fill="#5f6368"
+              viewBox="0 -960 960 960"
+              aria-hidden="true"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+
+            <!-- Close icon -->
+            <svg
+              class="icon icon-close"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              width="24px"
+              fill="#5f6368"
+              viewBox="0 -960 960 960"
+              aria-hidden="true"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </button>
+
+          <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">INFO</a></li>
+          </ul>
+      </nav>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Our Design System</p>
+
+      <h1>Build better interfaces with reusable components.</h1>
+
+      <p class="hero-text">
+        A small set of thoughtful styles can make an entire website
+        feel consistent.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#" class="button button-primary">Get Started</a>
+        <a href="#" class="button button-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="custom-shape-divider-top-1792430853">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z" class="shape-fill"></path>
+    </svg>
+</div>
+
+  <div class="col-1">
+    <h4>USEFUL LINKS</h4>
+    <a href ="#">Home</a>
+    <a href ="#">About</a>
+    <a href ="#">Components</a>
+  </div>
+
+  <div class="col-3">
+    <h4>NEWSLETTER</h4>
+    
+    <form action="#">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+      <label for="message">Email Message:</label>
+      <textarea type="message" id="message" placeholder="Type Your Message Here:"></textarea>
+      <button type="submit">SUBSCRIBE NOW</button>
+
+    </form>
+  </div>
+
+
+  <div class="col-2">
+    <h4>CONTACT</h4>
+    <p>123 XYZ Road<br>Bethlehem, PA 18013</p>
+    <div class="social-icons">
+      <i class="fa-brands fa-square-facebook"></i>
+      <i class="fa-brands fa-square-instagram"></i>
+      <i class="fa-brands fa-square-github"></i>
+      <i class="fa-brands fa-square-bluesky"></i>
+    </div>
+  </div>
+</footer>
+        
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector(".nav-links");
+        const button = document.querySelector(".menu-toggle");
+
+        nav.classList.toggle("open");
+        button.classList.toggle("open");
+
+        button.setAttribute(
+          "aria-expanded",
+          button.classList.contains("open")
+        );
+      }
+    </script>
+    </body>
+</html>
